@@ -55,7 +55,7 @@ fun1(5)
 async function fun2() {
   let result1 = (await fun1(5)) * 2;
   let result2 = (await fun1(result1)) + 10;
-  console.log(`최종결과:${result2}`);
+  console.log(`최종결과 = ${result2}`);
 }
 
 fun2();
