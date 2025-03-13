@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>이벤트 객체 예제</title>
+  </head>
+  <body>
+    <form id="myForm" method="get">
+      <input type="text" name="a" id="b" />
+      <button type="submit">제출</button>
+    </form>
+    <script>
+      const form = document.querySelector('#myForm');
+      const input = document.querySelector('#b');
+
+      // 폼 제출 이벤트
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+      });
+
+      input.addEventListener('keyup', function (event) {
+        console.log('입력된 값 : ', event.key);
+        console.log('입력된 값 : ', event.keyCode);
+      });
+
+      document.addEventListener('mousemove', function () {
+        const x = event.clientX;
+        const y = event.clientY;
+        console.log(`X : ${x}, Y : ${y}`);
+      });
+    </script>
+  </body>
+</html>
