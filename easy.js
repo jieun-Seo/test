@@ -59,3 +59,5 @@ async function fun2() {
 }
 
 fun2();
+
+//왜 자꾸 수정해요?
