@@ -30,7 +30,7 @@ function getUserWriting(userID) {
 }
 getUserInfo(1)
   .then((user) => {
-    console.log(`사용자 정보 : ${user}`);
+    console.log(`사용자 정보1 : ${user}`);
     console.log(user);
   })
   .catch((err) => {
@@ -38,7 +38,7 @@ getUserInfo(1)
   });
 getUserWriting(1)
   .then((writing) => {
-    console.log(`사용자의 게시글 : ${writing}`);
+    console.log(`사용자의 게시글1 : ${writing}`);
   })
   .catch((err) => {
     console.error(err);
